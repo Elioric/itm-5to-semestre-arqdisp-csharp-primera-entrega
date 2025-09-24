@@ -25,6 +25,7 @@ podman run --rm -it -v .:/home/dotnet-project mcr.microsoft.com/dotnet/sdk:8.0
 Para evitar subir archivos innecesarios al repositorio, hacemos uso de un archivo `.gitignore`. Este archivo se puede crear directamente con un comando .Net y ser editado según nuestras necesidades.
 
 ```bash
+cd /home/dotnet-project
 dotnet new gitignore
 ```
 
@@ -44,7 +45,7 @@ Tras ejecutar este comando, podremos ver que se ha creado un nuevo proyecto de .
 Para ejecutar el proyecto inicializado, debemos ingresar a la carpeta del proyecto y correr el comando .Net.
 
 ```bash
-cd dotnet-basic-exercises/
+cd /home/dotnet-project/dotnet-basic-exercises/
 dotnet run
 ```
 
