@@ -17,14 +17,14 @@ namespace DotnetBasicExercises
 
                     if (divisor != 0)
                     {
-                        int remainder = (int)(dividend % divisor);
+                        double remainder = dividend % divisor;
                         Console.WriteLine($"El residuo de la división {dividend}/{divisor} es: {remainder}");
+                        break;
                     }
                     else
                     {
                         Console.WriteLine("El divisor debe ser diferente de cero.");
                     }
-                    break;
                 }
                 catch (Exception)
                 {
