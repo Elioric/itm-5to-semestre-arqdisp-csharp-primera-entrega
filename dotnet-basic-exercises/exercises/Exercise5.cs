@@ -17,16 +17,17 @@ namespace DotnetBasicExercises
                     {
                         string[] weekDays = { "Lunes", "Martes", "Miércoles", "Jueves", "Viernes" };
                         Console.WriteLine($"El día {dayNum} de la semana laboral es: {weekDays[dayNum - 1]}");
+                        break;
                     }
                     else if (dayNum == 6 || dayNum == 7)
                     {
                         Console.WriteLine("Número fuera del rango laboral.");
+                        break;
                     }
                     else
                     {
                         Console.WriteLine("El número del día debe estar entre 1 y 7 inclusivo.");
                     }
-                    break;
                 }
                 catch (Exception)
                 {
