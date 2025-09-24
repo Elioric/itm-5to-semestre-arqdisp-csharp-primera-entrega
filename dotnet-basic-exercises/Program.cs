@@ -15,10 +15,12 @@
 
                     if (option < 1 || option > 16)
                     {
+                        Console.Clear();
                         Console.WriteLine("Opción inválida. Por favor, seleccione una opción del 1 al 16.");
                     }
                     else if (option == 16)
                     {
+                        Console.Clear();
                         Console.WriteLine("");
                         Console.WriteLine("Saliendo del programa. ¡Hasta luego!");
                         Console.WriteLine("");
@@ -32,6 +34,7 @@
                 }
                 catch (FormatException)
                 {
+                    Console.Clear();
                     Console.WriteLine("Entrada inválida. Por favor, ingrese un número.");
                 }
             }
