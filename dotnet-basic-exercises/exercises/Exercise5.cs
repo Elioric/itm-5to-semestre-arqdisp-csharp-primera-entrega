@@ -1,6 +1,6 @@
 namespace DotnetBasicExercises
 {
-    public class Exercise5
+    public class Exercise5: IExercise
     {
         public static void Run()
         {
