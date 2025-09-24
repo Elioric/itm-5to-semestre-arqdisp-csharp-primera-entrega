@@ -1,6 +1,6 @@
 namespace DotnetBasicExercises
 {
-    public class Exercise1
+    public class Exercise1: IExercise
     {
         public static void Run()
         {
@@ -10,8 +10,9 @@ namespace DotnetBasicExercises
                 {
                     Console.WriteLine("");
                     Console.WriteLine("Ingresa un número positivo: ");
+                    double input = Validator.StringIsDouble(Console.ReadLine());
                     Console.WriteLine("");
-                    double input = double.Parse(Console.ReadLine());
+                    
                     if (input >= 0)
                     {
                         double result = Math.Pow(input, 2);
